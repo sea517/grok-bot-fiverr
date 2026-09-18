@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "campaign_name": "react-ts-sept-2026",
+  "keyword": "react typescript",
+  "first_message": "Hi {{candidate_name}},\n\nI came across your profile while searching for **{{keyword}}** talent. We’re hiring for a short technical assessment → paid take-home style trial.\n\nIf you’re open to it, reply here and I’ll share a few quick questions about your experience and stack.\n\nThanks,\n{{sender_name}}",
+  "shortlist_size": 8,
+  "status": "draft",
+  "notes": "Prefer full-stack web; skip agencies if possible.",
+  "updated_at": "2026-09-18T00:00:00.000Z"
+}

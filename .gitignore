@@ -5,5 +5,12 @@
 secrets/
 config/search.yaml
 config/stack-repo-map.yaml
+config/campaign.json
 **/candidates*.json
 **/candidates*.csv
+
+# Dashboard
+dashboard/node_modules/
+dashboard/dist/
+node_modules/
+dist/
