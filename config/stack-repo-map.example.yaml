@@ -1,11 +1,12 @@
-# Take-home repo map for Fiverr recruiting invites.
-# All stacks currently share one assignment repo.
+# Take-home assignment repo for Fiverr recruiting.
+# Invites use a dedicated GITHUB_TOKEN (never commit the token).
+# GITHUB_REPO=creativesolution999/full-stack-assignment
 stacks:
   default:
-    repo: "https://github.com/sea517/grok-bot-fiverr"
+    repo: "https://github.com/creativesolution999/full-stack-assignment"
   react:
-    repo: "https://github.com/sea517/grok-bot-fiverr"
+    repo: "https://github.com/creativesolution999/full-stack-assignment"
   node:
-    repo: "https://github.com/sea517/grok-bot-fiverr"
+    repo: "https://github.com/creativesolution999/full-stack-assignment"
   python:
-    repo: "https://github.com/sea517/grok-bot-fiverr"
+    repo: "https://github.com/creativesolution999/full-stack-assignment"
