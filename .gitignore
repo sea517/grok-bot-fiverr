@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+*.pem
+secrets/
+config/search.yaml
+config/stack-repo-map.yaml
+**/candidates*.json
+**/candidates*.csv
