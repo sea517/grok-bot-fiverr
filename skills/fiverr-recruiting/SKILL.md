@@ -20,12 +20,21 @@ There is no Fiverr connector. Use the bot browser/desktop. Prefer a saved 1Passw
 
 ## Operator inputs
 
-Before sourcing, get (or reuse from memory):
+Prefer **`config/campaign.json`** when present (exported from the operator dashboard; see `config/campaign.example.json`). That file is the source of truth for:
+
+- **keyword** — Fiverr search term (`keyword`)
+- **first_message** — first outreach DM body (`first_message`)
+- optional **shortlist_size**, **campaign_name**, **notes**, **status**
+
+If `config/campaign.json` is missing, get (or reuse from memory / ask the operator):
 
 - **keyword** — Fiverr search term
+- **first outreach message** — or fall back to `templates/outreach-dm.md`
 - **shortlist size** — default 5–10
 - **outreach tweaks** — role, company voice, must-haves
 - **stack → repo map** — which take-home repo to invite for each main stack
+
+Do not commit live `config/campaign.json` (it is gitignored).
 
 ## Pipeline stages (global run)
 
@@ -50,7 +59,7 @@ Ask the operator which profiles to contact unless they already said “message t
 
 ### 3. `outreach_dm`
 
-For each approved profile, open Fiverr inbox/DM and send the outreach template (`templates/outreach-dm.md`), filled with role/keyword specifics.
+For each approved profile, open Fiverr inbox/DM and send the **first message** from `config/campaign.json` (`first_message`) when present; otherwise use the outreach template (`templates/outreach-dm.md`), filled with role/keyword specifics.
 
 Rules:
 
