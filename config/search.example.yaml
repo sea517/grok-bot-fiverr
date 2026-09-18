@@ -1,0 +1,9 @@
+# Copy to a private/local config — do not commit real campaign data with PII.
+keyword: "react typescript"
+shortlist_size: 8
+# Optional filters (apply in the Fiverr UI as available)
+filters:
+  # location: ""
+  # min_rating: 4.5
+  # seller_level: ""
+notes: "Prefer full-stack web; skip agencies if possible."
