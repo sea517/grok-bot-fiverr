@@ -1,0 +1,11 @@
+# Map candidate main stack → take-home GitHub repo.
+# Replace with real private take-home repos the invite token can access.
+stacks:
+  react:
+    repo: "https://github.com/YOUR_ORG/takehome-react"
+  node:
+    repo: "https://github.com/YOUR_ORG/takehome-node"
+  python:
+    repo: "https://github.com/YOUR_ORG/takehome-python"
+  default:
+    repo: "https://github.com/YOUR_ORG/takehome-general"
