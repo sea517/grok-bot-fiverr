@@ -88,7 +88,7 @@ When a candidate replies, run the **assessment stage machine** below in that thr
 
 6. **`github_invited`** — when they share a GitHub username:
    - Pick the take-home repo from the stack → repo map using their stated main stack (ask the operator if no map match).
-   - Invite that GitHub user to the repo.
+   - Automatically invite that GitHub user as a collaborator to `creativesolution999/full-stack-assignment` using the dedicated invite `GITHUB_TOKEN` (from secrets; never from chat or git).
    - Send: `I invited you, Once you have access to the repo, please start by reviewing the project and task instructions.`
    - Then send the take-home block from `templates/github-takehome.md` (fork only, 6 hours, reply with fork link + summary + tradeoffs).
 7. **`awaiting_submission`** — watch for fork link + summary; notify the operator when it arrives.
