@@ -93,11 +93,14 @@ When a candidate replies, run the **assessment stage machine** below in that thr
    - Then send the take-home block from `templates/github-takehome.md` (fork only, 6 hours, reply with fork link + summary + tradeoffs).
 7. **`awaiting_submission`** — watch for fork link + summary; notify the operator when it arrives.
 
-## OpenRouter (optional)
+## OpenRouter (required for interview follow-ups)
 
-- Use the saved OpenRouter API key when present.
+- Provider: `AI_PROVIDER=openrouter`
+- Model: `OPENROUTER_MODEL=deepseek/deepseek-v4-flash-0731`
+- Base URL: `OPENROUTER_BASE_URL=https://openrouter.ai/api/v1`
+- API key: `OPENROUTER_API_KEY` from the operator secrets store (never commit or paste into chat/repo).
 - Prompt: interviewing for a technical assessment; given conversation so far, ask one concise next question about experience/stack/projects; no preamble.
-- If no key, still run the interview with carefully written questions.
+- Call OpenRouter Chat Completions with that model for each interview follow-up.
 
 ## Rules
 
